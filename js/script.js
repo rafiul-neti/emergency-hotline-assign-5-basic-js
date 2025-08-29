@@ -75,3 +75,21 @@ getID("service-cards").addEventListener("click", function (e) {
 getID("clear-history").addEventListener("click", function () {
     getID("call-container").innerHTML = "";
 })
+
+// requirement-4 copy the number
+
+getID("service-cards").addEventListener("click", function (e) {
+
+    let copyCounter = Number(getID("copy-counter").innerText);
+
+    if (e.target.className.includes("copy-btn")) {
+        const copyBtn = e.target;
+        const copied = copyBtn.parentNode.parentNode.children[2].innerText
+
+        copyCounter++
+        getID("copy-counter").innerText = copyCounter;
+        
+        navigator.clipboard.writeText(copied)
+        alert("Number Copied 👍 " + copied)
+    }
+})

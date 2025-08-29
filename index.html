@@ -24,7 +24,7 @@
             <div class="flex gap-3 justify-around lg:items-center">
                 <button class="btn inter bg-[#41ff6b1a] lg:flex lg:items-center lg:gap-1 lg:font-bold lg:text-xl rounded-full lg:px-7"><span id="heart-attack">0</span> <img src="./assets/heart.png" alt="" class="w-[1.3em] h-[1.3em]"></button>
                 <button class="btn inter bg-[#41ff6b1a] lg:flex lg:items-center lg:gap-1 font-bold lg:text-xl rounded-full lg:px-5"><span id="coin">100</span> <img src="./assets/coin.png" alt="" class="w-[1.3em] h-[1.3em]"></button>
-                <button class="btn inter bg-[#00A63E] text-white font-bold lg:text-xl rounded-full lg:px-5"><span>0</span> Copy</button> 
+                <button class="btn inter bg-[#00A63E] text-white font-bold lg:text-xl rounded-full lg:px-5"><span id="copy-counter">0</span> Copy</button> 
             </div>
         </nav>
 
@@ -32,17 +32,17 @@
                          
         <div class="flex flex-col justify-center items-center bg-gradient-to-r from-emerald-950 via-emerald-800 to-emerald-950 p-5">
             <img src="./assets/logo-dark.png" alt="Dark Logo" class="w-20" >
-            <h2 class="lg:my-3 font-bold text-white text-3xl">Emergency Service Directory</h2>
-            <p class=" font-semibold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h2 class="my-2 lg:my-3 font-bold text-white text-[23px] lg:text-3xl">Emergency Service Directory</h2>
+            <p class=" lg:font-semibold text-white lg:text-xl text-justify">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
 
     <main class="mt-10">
-        <section class="lg:w-11/12 lg:mx-auto grid grid-cols-12 gap-4">
+        <section class="lg:w-11/12 lg:mx-auto grid lg:grid-cols-12 gap-4">
                     <!-- service-cards -->
-            <div class="col-span-9 grid grid-cols-3 gap-5" id="service-cards">
+            <div class="lg:col-span-9 grid grid-cols-1 lg:grid-cols-3 gap-5" id="service-cards">
                 <!-- card 1 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/emergency.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -53,14 +53,14 @@
                         <h1 class="font-bold text-2xl service-num" id="num-1">999</h1>
                         <p class="w-9 bg-[#ffe3e286] rounded-lg text-center p-1">All</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 2 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center">
                         <img src="./assets/police.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -71,14 +71,14 @@
                         <h1 class="font-bold text-2xl service-num" id="num-2">999</h1>
                         <p class="w-20 bg-[#ffe3e286] rounded-lg text-center p-1">Police</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 3 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/fire-service.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -89,14 +89,14 @@
                         <h1 class="font-bold text-2xl service-num" id="num-3">999</h1>
                         <p class="w-12 bg-[#ffe3e286] rounded-lg text-center p-1">Fire</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 4 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/ambulance.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -107,14 +107,14 @@
                         <h1 class="font-bold text-2xl service-num" >1994-999999</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">Health</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 5 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/emergency.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -125,14 +125,14 @@
                         <h1 class="font-bold text-2xl service-num">109</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">Help</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 6 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/emergency.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -143,14 +143,14 @@
                         <h1 class="font-bold text-2xl service-num">106</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">Govt.</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 7 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/emergency.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -161,14 +161,14 @@
                         <h1 class="font-bold text-2xl service-num">109</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">Help</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card 8 -->
-                <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/brac.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -179,14 +179,14 @@
                         <h1 class="font-bold text-2xl service-num">16445</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">NGO</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
                 </div>
 
                 <!-- card-9 -->
-                 <div class="card bg-base-100 w-[300px] shadow-2xl p-5">
+                 <div class="card bg-base-100 w-11/12 mx-auto lg:min-w-[300px] lg:mx-0 shadow-2xl p-5">
                     <div class="flex justify-between items-center mb-3">
                         <img src="./assets/Bangladesh-Railway.png" alt="" class="w-[45px] p-2 bg-[#FFE3E2] rounded-lg">
                         <i class="fa-regular fa-heart text-xl h-a-counter"></i>
@@ -197,7 +197,7 @@
                         <h1 class="font-bold text-2xl service-num">163</h1>
                         <p class="w-14 bg-[#ffe3e286] rounded-lg text-center p-1">Travel</p>
                             <div class="card-actions mt-3">
-                                <button class="btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
+                                <button class="btn copy-btn w-[48%] bg-white text-lg shadow-xl border-2 border-gray-200"><img src="./assets/copy.png" alt="">Copy</button>
                                 <button class="btn call-button w-[48%] bg-green-600 text-lg text-white shadow-xl"><img src="./assets/call.png" alt=""> Call</button>
                             </div>
                     </div>
@@ -205,7 +205,7 @@
             </div>
 
                     <!-- call history -->
-            <aside class="call-history bg-white shadow-xl col-span-3 p-3">
+            <aside class="call-history bg-white shadow-xl lg:col-span-3 p-3 hidden lg:block">
                 <div class="flex justify-between">
                     <h1 class="flex items-center gap-2 font-bold text-lg"><img src="./assets/group.png" alt="" class="w-5 h-5 ">Call History</h1>
                     <button type="button" class="btn bg-green-600 text-white text-lg rounded-full" id="clear-history">Clear</button>
@@ -217,6 +217,11 @@
             </aside>
         </section>
     </main>
+
+    <!-- floating call history button for mobile -->
+            <div class="p-7 w-6 h-6 fixed btn-circle text-lg bottom-5 right-5 block lg:hidden z-50">
+                    <img src="./assets/phone-call-icon.svg" alt="">
+            </div>
 
 
     <script src="./js/script.js"></script>
