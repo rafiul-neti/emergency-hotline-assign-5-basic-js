@@ -33,12 +33,12 @@
         <div class="flex flex-col justify-center items-center bg-gradient-to-r from-emerald-950 via-emerald-800 to-emerald-950 p-5">
             <img src="./assets/logo-dark.png" alt="Dark Logo" class="w-20" >
             <h2 class="my-2 lg:my-3 font-bold text-white text-[23px] lg:text-3xl">Emergency Service Directory</h2>
-            <p class=" lg:font-semibold text-white lg:text-xl text-justify">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <p class=" lg:font-semibold text-white lg:text-xl text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
 
     <main class="mt-10">
-        <section class="lg:w-11/12 lg:mx-auto grid lg:grid-cols-12 gap-4">
+        <section class="lg:w-11/12 lg:mx-auto lg:grid lg:grid-cols-12 gap-4">
                     <!-- service-cards -->
             <div class="lg:col-span-9 grid grid-cols-1 lg:grid-cols-3 gap-5" id="service-cards">
                 <!-- card 1 -->
@@ -205,7 +205,7 @@
             </div>
 
                     <!-- call history -->
-            <aside class="call-history bg-white shadow-xl lg:col-span-3 p-3 hidden lg:block">
+            <aside class="call-history bg-white shadow-xl lg:col-span-3 col-span-1 p-5 hidden lg:block">
                 <div class="flex justify-between">
                     <h1 class="flex items-center gap-2 font-bold text-lg"><img src="./assets/group.png" alt="" class="w-5 h-5 ">Call History</h1>
                     <button type="button" class="btn bg-green-600 text-white text-lg rounded-full" id="clear-history">Clear</button>
@@ -215,15 +215,14 @@
                    
                 </div>
             </aside>
+
+            
         </section>
     </main>
 
     <!-- floating call history button for mobile -->
-            <div class="p-7 w-6 h-6 fixed btn-circle text-lg bottom-5 right-5 block lg:hidden z-50">
-                    <img src="./assets/phone-call-icon.svg" alt="">
-            </div>
-
-
+                    <img src="./assets/phone-call-icon.svg" alt="" id="floating-button" class="w-12 h-12 fixed text-lg bottom-6 right-5 block lg:hidden z-50">
+           
     <script src="./js/script.js"></script>
 </body>
 </html>

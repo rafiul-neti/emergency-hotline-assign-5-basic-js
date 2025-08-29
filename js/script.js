@@ -93,3 +93,17 @@ getID("service-cards").addEventListener("click", function (e) {
         alert("Number Copied 👍 " + copied)
     }
 })
+
+// functions for the"floating button" to show the call history section on mobile devices
+
+getID("floating-button").addEventListener("click", function () {
+    const callHistories = document.querySelector(".call-history")
+    consol(callHistories)
+
+    callHistories.classList.toggle("hidden")
+
+    if (callHistories.className.includes("hidden") === false) {
+        callHistories.classList.add("sticky", "bottom-20", "w-11/12", "mx-auto")
+    }
+
+});
