@@ -103,7 +103,7 @@ getID("floating-button").addEventListener("click", function () {
     callHistories.classList.toggle("hidden")
 
     if (callHistories.className.includes("hidden") === false) {
-        callHistories.classList.add("sticky", "bottom-20", "w-11/12", "mx-auto")
+        callHistories.classList.add("sticky", "bottom-24", "w-11/12", "mx-auto")
     }
 
 });
