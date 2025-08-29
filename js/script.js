@@ -69,3 +69,9 @@ getID("service-cards").addEventListener("click", function (e) {
         callHistory.append(newHistory);
     }
 })
+
+// requirement-3 clear the sidebar after clicking the "clear" button
+
+getID("clear-history").addEventListener("click", function () {
+    getID("call-container").innerHTML = "";
+})
