@@ -48,8 +48,10 @@ getID("service-cards").addEventListener("click", function (e) {
 
            alert("📞 Calling " + subTitle + " " + number + "...");
         } else {
-           alert("You've to at least 20 coin to make a call!😫");
+          return alert("You've to at least 20 coin to make a call!😫");
         }
+
+        const callTime = new Date().toLocaleTimeString()
 
         const callHistory = getID("call-container");
 
@@ -57,11 +59,13 @@ getID("service-cards").addEventListener("click", function (e) {
         newHistory.innerHTML = `
             <div class="bg-zinc-50 p-4 rounded-xl shadow-xl flex items-center justify-between my-3">
                     <div class="">
-                        <h1>${}</h1>
+                        <h1>${title}</h1>
                         <p>${number}</p>
                     </div>
-                    <p>10.41pm</p>
+                    <p>${callTime}</p>
             </div>
         `;
+
+        callHistory.append(newHistory);
     }
 })
